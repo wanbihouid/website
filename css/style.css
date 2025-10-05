@@ -64,7 +64,7 @@ body {
 }
 
 .nft .main .description {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #a89ec9;
 }
 
@@ -86,19 +86,11 @@ body {
     font-size: 1.2rem;
 }
 
-.nft .main .tokenInfo .price ins {
-    margin-right: 0.5rem;
-}
-
 .nft .main .tokenInfo .duration {
     display: flex;
     align-items: center;
     color: #a89ec9;
-    font-size: 1rem;
-}
-
-.nft .main .tokenInfo .duration ins {
-    margin: 0.5rem 0.5rem 0.4rem;
+    font-size: 0.9rem;
 }
 
 .nft .main .creator {
