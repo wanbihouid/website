@@ -7,7 +7,7 @@ $(document).ready(function() {
     $main_img.on('click', function() {
         $main_img.hide(0, function() {
             if(now_img == true){
-                $main_img.css({'opacity':0.1,'padding':30%,'border':'1px dashed #ffffff'});
+                $main_img.css({'opacity':0.1,'padding':'30%','border':'1px dashed #ffffff'});
             }else{
                 $main_img.css({'opacity':1,'padding':'unset','border':'none'});
             }
