@@ -1,4 +1,11 @@
 $(document).ready(function() {
+
+    //禁止右键菜单
+    $(document).on('contextmenu', function(event) {
+        event.preventDefault();
+    });
+
+    //点击主图切换
     const $main_img = $('#main_img');
     const main_jpg = '/img/main.jpg';
     const icon_jpg = '/img/icon.jpg';
