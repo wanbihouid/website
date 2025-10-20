@@ -23,4 +23,15 @@ $(document).ready(function() {
             $main_img.fadeIn(200);
         });
     });
+
+    //实时ETH价格
+    $.ajax({
+        url:'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd', //CoinGecko 价格接口
+        type:'GET',
+        dataType:'json',
+        success: function(response){
+            var eth_price = response.ethereum.usd;
+            $('#eth_price').html(eth_price + ' / ETH');
+        }
+    });
 });
