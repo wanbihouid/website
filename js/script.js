@@ -26,11 +26,11 @@ $(document).ready(function() {
 
     //实时ETH价格
     $.ajax({
-        url:'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd', //CoinGecko 价格接口
+        url:'https://fapi.coinglass.com/api/coin/v2/info?symbol=ETH', //CoinGlass 价格接口
         type:'GET',
         dataType:'json',
         success: function(response){
-            var eth_price = response.ethereum.usd;
+            var eth_price = response.data.price;
             $('#eth_price').html(eth_price + ' / ETH');
         }
     });
